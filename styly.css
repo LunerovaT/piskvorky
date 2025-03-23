@@ -50,6 +50,10 @@ img {
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  :hover {
+    color: #1cbb96;
+  }
 }
 
 .button__zacithrat {
@@ -63,4 +67,8 @@ img {
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  :hover {
+    color: #0090e9;
+  }
 }
