@@ -1,0 +1,66 @@
+html,
+body {
+  background: linear-gradient(to bottom, #615dad, #ffc8da);
+  height: 100%;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+  padding: 50px;
+}
+
+h1 {
+  font-family: "lobster";
+  font-size: 30px;
+  text-align: center;
+}
+
+.card__text {
+  background: #283e50;
+  max-width: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 4px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 2% 2% 0 0;
+  margin-bottom: 0px;
+}
+
+.uvodni {
+  width
+}
+
+
+.button__pravidla {
+  width: 100%;
+  background: #1fcca4;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 1px;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.button__zacithrat {
+  width: 100%;
+  background: #0197f6;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 1px;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
