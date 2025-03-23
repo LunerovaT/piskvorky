@@ -16,12 +16,14 @@ body {
 
 h1 {
   font-family: "lobster";
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 
 .card__text {
   background: #283e50;
+  color: white;
+  border-radius: 0 0 2% 2%;
   max-width: 100%;
   font-size: 20px;
   text-align: center;
@@ -34,11 +36,6 @@ img {
   margin-bottom: 0px;
 }
 
-.uvodni {
-  width
-}
-
-
 .button__pravidla {
   width: 100%;
   background: #1fcca4;
@@ -50,13 +47,15 @@ img {
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px;
-
-  :hover {
-    color: #1cbb96;
-  }
 }
 
-.button__zacithrat {
+.button__pravidla:hover {
+  background: #1cbb96;
+  color: white;
+}
+
+.button__zacithrat,
+.button__zacithrat:link {
   width: 100%;
   background: #0197f6;
   color: white;
@@ -67,8 +66,8 @@ img {
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px;
-
-  :hover {
-    color: #0090e9;
-  }
 }
+
+.button__zacithrat:hover {
+  background: #0090e9;
+  color: white;
