@@ -2,6 +2,17 @@ html,
 body {
   background: linear-gradient(to bottom, #615dad, #ffc8da);
   height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('CALIBRI.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('lobster-regular.ttf') format('truetype');
 }
 
 .block {
@@ -10,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 400px;
+  min-width: 300px;
   margin: auto;
   padding: 50px;
 }
@@ -18,6 +30,11 @@ h1 {
   font-family: "lobster";
   font-size: 40px;
   text-align: center;
+  color: white;
+}
+
+p {
+  font-family: "calibri";
 }
 
 .card__text {
@@ -34,12 +51,15 @@ img {
   max-width: 100%;
   border-radius: 2% 2% 0 0;
   margin-bottom: 0px;
+  display: block;
+
 }
 
 .button__pravidla {
   width: 100%;
   background: #1fcca4;
   color: white;
+  font-family: "calibri";
   font-size: 20px;
   text-align: center;
   border-radius: 1px;
@@ -59,6 +79,7 @@ img {
   width: 100%;
   background: #0197f6;
   color: white;
+  font-family: "calibri";
   font-size: 20px;
   text-align: center;
   border-radius: 1px;
@@ -71,3 +92,98 @@ img {
 .button__zacithrat:hover {
   background: #0090e9;
   color: white;
+}
+
+/*stylovani hry*/
+/*stylhracího menu*/
+
+.block__menuHra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  /* optional spacing */
+}
+
+.block__menuHra__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*mezera mezi textem a kruhem */
+}
+
+.block__menuHra__left__text {
+  font-weight: bold;
+}
+
+.block__menuHra__right {
+  display: flex;
+  gap: 10px
+}
+
+.block__menuHra__kolecko {
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+}
+
+.block__menuHra__iconHome {
+  background-color: #1cbb96;
+  border-radius: 20%;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.block__menuHra__iconRestart {
+  background-color: #0197f6;
+  border-radius: 20%;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* stylování hraciho pole*/
+.block_hracipole {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  /*políčka těsně u sebe*/
+  justify-content: center;
+}
+
+.block_hracipole_button {
+  background-color: transparent;
+  border: none;
+  Border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  width: calc(10%);
+  /* 10 políček na řádek*/
+  padding-top: calc(10%);
+  /* výška stejná */
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+/* první řada */
+.block_hracipole_button:nth-child(-n+10) {
+  border-top: 2px solid black;
+}
+
+/* první sloupec (každý desátý prvek +1) */
+.block_hracipole_button:nth-child(10n + 1) {
+  border-left: 2px solid black;
+}
+
+/*spodní řada */
+.block_hracipole_button:nth-child(n+91) {
+  border-bottom: 2px solid black;
+}
+
+/*tlačitka při přejetí sviti*/
+.block_hracipole_button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
