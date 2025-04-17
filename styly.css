@@ -187,3 +187,19 @@ img {
 .block_hracipole_button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* hrací kolečka a kroužky*/
+
+.board__field__circle {
+  background-image: url('circle.svg');
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.board__field__cross {
+  background-image: url('cross.svg');
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
