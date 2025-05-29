@@ -27,10 +27,12 @@ window.addEventListener('DOMContentLoaded', () => {
       } else if (policko.classList.contains('board__field__cross')) {
         pole.push('x');
       } else {
-        pole.push('');
+        pole.push('_');
       }
     });
+    return pole;
   }
+
   function vyhodnotHru() {
     const pole = ziskejHerniPole();
     const vitez = findWinner(pole);
